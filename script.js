@@ -38,7 +38,7 @@ function addProductCard(product, indexnum) {
 }
 
 function addProductToServer(product) {
-    fetch('https://final-test-7fvk.onrender.com/data', {
+    fetch('Placeholder', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -59,7 +59,7 @@ function addProductToServer(product) {
 }
 
 function initializeProductList() {
-    fetch('https://final-test-7fvk.onrender.com/data')
+    fetch('Placeholder')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -76,7 +76,7 @@ function initializeProductList() {
 }
 
 function deleteProduct(indexnum) {
-    fetch(`https://final-test-7fvk.onrender.com/data/${indexnum}`, {
+    fetch(`Placeholder/${indexnum}`, {
         method: 'DELETE'
     })
     .then(response => {
@@ -103,7 +103,7 @@ function closeModel() {
 }
 
 function checkPassword() {
-    var correctPassword = "Gilbert@6737";
+    var correctPassword = "Placeholder";
     const pass = document.getElementById("password").value;
     var errorMessage = document.getElementById("error");
     if (pass === correctPassword) {
